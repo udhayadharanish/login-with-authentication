@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+        *{
+        font-family:'Prompt', sans-serif;
+
+
+        }
+
+        .box{
+        width: 30%;
+        height: 40px;
+        margin:0;
+        border: 0;
+        border-radius: 15px;
+        color: rgb(58, 58, 58);
+        background-image:linear-gradient(rgba(9, 39, 86,0.3),rgba(86, 9, 68,0.3));
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        font-size: 18px;
+        padding: 5px;
+        }
+        .box:focus{
+        border:none;
+        outline:none;
+        }
+        .button{
+            height: 40px;
+            border:0;
+            width:15%;
+            border-radius: 15px;
+            color: #A9A9A9;
+            font-weight:bold;
+            background-image:linear-gradient( to top,#cc2b5e ,#753a88 );
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            font-size: 18px;
+            transition-duration:0.3s;
+        }
+        body{
+        background-image:linear-gradient(to top ,rgba(9, 39, 86,1),rgba(86, 9, 68,1));
+                background-repeat:no-repeat;
+                margin-bottom:10%;
+                text-align:center;
+        }
+        .button:hover{
+            transform:scale(1.1)
+        }
+    </style>
+</head>
+<body >
+    <form action="/register" method="post">
+        <h1 style="color:#A9A9A9">Welcome ! </h1>
+        <h1 style="color:#A9A9A9">Fill the Details to Register</h1><br>
+        <!-- <label><h3>Name</h3></label> -->
+        <input type="text" name="r_name" placeholder="Name here" class="box" required
+        ><br><br><br><br>
+        <!-- <label><h3>Email</h3></label> -->
+        <input type="email" name="r_email" placeholder="Email here" class="box" required><br><br><br><br>
+        <!-- <label><h3>Password</h3></label> -->
+        <input type="password" name="r_pass" placeholder="Password" class="box" required><br><br><br><br>
+        <!-- <label><h3>Confirm Password</h3></label> -->
+        <input type="password" name="rc_pass" placeholder="Re-enter password" class="box" required><br><br><br><br>
+        <input type="submit" class="button" value="Register" >
+    </form>
+</body>
+</html>

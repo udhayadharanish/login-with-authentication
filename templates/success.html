@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+    <style>
+        .div{
+         display:grid;
+         gap:10px;
+         grid-template-columns:25% 25%;
+
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+    <h1 style="color: green ; background-color:rgb(140, 243, 183);">Details</h1>
+        <div class="div">
+        <div>
+        <table>
+            <tr>
+                <th scope="col">
+                Name
+                </th>
+            </tr>
+
+            {% for name in users %}
+
+                <tr>
+                    <td scope="value">{{name}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        </div>
+        <div>
+        <table>
+            <tr>
+            <th scope="col">
+                Passwords
+            </th>
+
+            </tr>
+            {% for p in pas %}
+
+                <tr>
+                    <td scope="value">{{p}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        </div>
+        </div>
+
+
+<!--        {% for pass in p %}-->
+<!--        <tr>-->
+<!--            <td>{{pass}}</td>-->
+
+<!--        </tr>-->
+<!--        {% endfor %}-->
+
+    </form>
+</body>
+</html>
